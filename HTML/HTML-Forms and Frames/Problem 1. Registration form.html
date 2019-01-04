@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom</title>
+</head>
+<style type="text/css">
+	#btn{
+		background-color: #BCA9F5;
+	}
+	.right{
+		text-align: right;
+	}
+</style>
+<body>
+	<form action="" method="post">
+	<table width="400" border="2" cellpadding="6">
+		<tr>
+			<td class="right"><strong>Last name</strong></td>
+			<td>
+				<input type="text" name="lastname" size="40">
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>First name</strong></td>
+			<td>
+				<input type="text" name="firstname" size="40">
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Address</strong></td>
+			<td>
+				<textarea cols="41" name="description"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>City</strong></td>
+			<td>
+				<input type="text" name="city" size="21"> <strong>State </strong><input type="text" name="state" size="8">
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Zip/Postal Code</strong></td>
+			<td>
+				<input type="text" name="code" size="8">
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Country</strong></td>
+			<td>
+				<select name="country">
+					<option value="America" selected>America</option>
+					<option value="Vietnam">Vietnam</option>
+					<option value="Japan">Japan</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Phone (Country code, area code, number)</strong></td>
+			<td>
+				( +<input type="text" name="countrycode" size="3"> ) <input type="text" name="areacode" size="3"> - <input type="text" name="phone" size="18">
+			</td>
+		</tr> 
+		<tr>
+			<td class="right"><strong>E-mail</strong></td>
+			<td>
+				<input type="text" name="e-mail" size="40" placeholder="example@gmail.com">
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Brith date</strong></td>
+			<td>
+				Month <input type="text" name="month" size="1"> Day <input type="text" name="day" size="1"> Year (4 digit) <input type="text" name="year" size="3">
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Gender</strong></td>
+			<td>
+				<select name="gender">
+					<option value="Male" selected>Male</option>
+					<option value="Female">Female</option>	
+					<option value="Other">Other</option>	
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Starting date</strong></td>
+			<td>
+				<input type="radio" name="2018"	value="Spring2018"> Spring 2018
+				<input type="radio" name="2018" value="Summer2018"> Summer 2018
+			</td>
+		</tr>
+		<tr>
+			<td class="right"><strong>Comments/Questions</strong></td>
+			<td>
+				<textarea cols="41" name="comment" placeholder="Please senfd me more information."></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td id="btn" colspan="2" align="center">
+				<input type="submit" name="submit"	value="Submit">
+				<input type="reset" name="reset" value="Clear This Form"> &nbsp;&nbsp;
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
