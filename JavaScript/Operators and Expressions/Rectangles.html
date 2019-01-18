@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script language="javascript">
+        function myFunction() {
+            var width = parseFloat(document.getElementById("width").value);
+            var height = parseFloat(document.getElementById("height").value);
+
+            var area = width * height;
+            var perimeter = (width + height) * 2;
+
+            document.getElementById("area").innerText = ("Area " + area);
+            document.getElementById("perimeter").innerText = ("Perimeter " + perimeter);
+        }
+    </script>
+    <input type="text" id="width" value="" placeholder="Add width" />
+    <input type="text" id="height" value="" placeholder="Add height" />
+    <button onclick="myFunction()">Enter</button>
+    <div id="area"></div>
+    <div id="perimeter"></div>
+</body>
+</html>
