@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script language='javascript'>
+
+        function show_result() {
+            var input = document.getElementById("input").value;
+            var C = 0;
+            for (var i = 1; i <= Math.round(Math.sqrt.length); i++) {
+                if(input % i ==0){
+                    C++;
+                }
+            }
+            var div = document.getElementById("result");
+
+            if (C <= 2) {
+                div.innerText = ("True");
+            } else {
+                div.innerText = ("False");
+            }
+        }
+    </script>
+    <input id="input" value="" />
+    <br />
+    <button id="myBtn" onclick="show_result()">Show result</button>
+    <div id="result"></div>
+</body>
+
+</html>
